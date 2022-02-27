@@ -1,2 +1,13 @@
 # Street-Photography
- Street-Photography website
+- Beside my passion for coding, I am also a Photographer. I enjoy documenting people in the street, just capturing life on the daily basis. I want to share the wonderful things that I see. I am inspired by *Vivian Maier* *Evan Ranft*, and *Peter Mckinnon*
+  
+# Website / blog-post
+-   I built this website from scratch and I will continue to update it and modify it to make it more optimize and visually pleasing.
+  
+# Technology
+- Currently, I am only using **HTML** and **CSS** but as I progress I will start adding **JavaScript** and other js frameworks.
+
+# Author
+- Hi, my name is Jeffrey, I am currently pursuing a computer science degree. I have a strong computer background and I have passion for coding. 
+
+
