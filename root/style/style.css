@@ -82,6 +82,7 @@ main>figure {
     margin-bottom: 1.5rem;
     border-radius: 15px;
     flex-direction: row;
+    
 
 
 }
@@ -144,18 +145,22 @@ ol>li:hover {
     border: 1px dotted black;
     padding: 20px 40px;
     list-style-position: outside;
+    
 }
 
 .unordered-list>ul li {
     border: 4px double black;
     font-size: 1.1rem;
     line-height: 1.5;
+    
 
 }
 
-.unordered-list>ul li:hover {
-    background-image: url("images/camera-bg.jpeg");
-    background-repeat: no-repeat;
+
+.unordered-list> ul li:hover {
+    background: grey url(../images/camera-bg.jpeg) no-repeat center;
+    color: white;
+
 }
 
 /* Footer */
