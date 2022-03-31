@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+    Description: About street photography
+    Author: Jeffrey Grospe
+    Date: April 01 2022
+ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Street Photography page">
+    <meta name="author" content="Jeffrey Grospe">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Assignment 1 - Street Photography</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="topic.html">Topic</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="lists.html">Lists</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li id="currentPage"><a href="form.html">Form</a></li>
+                    <li><a  href="contact.html">Contact</a></li>
+                    <li><a href="https://unsplash.com" target="_blank">Unsplash</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="alert">
+            <p>Fill in the information about the new Student</p>
+        </div>
+        <main class="main-form">
+            <div class="student info">
+                <div class="icon"></div>
+                <h3>Student's Info</h3>
+            </div>
+            <div class="std-form">
+                <form action="" method="get">
+                    <label for="stdID">Student ID <br></label>
+                        <input id="stdID" name="student" type="text" name="stdID" placeholder="Enter your student ID (only digit)"/><br>
+                    <label for="firstName">Firstname <br>
+                        <input type="text" name="student" id="firstName" placeholder="Firstname"></label><br>
+                    <label for="lastName">Lastname <br>
+                        <input type="text" name="student" id="lastName" placeholder="Lastname"></label><br>
+                    <div class="user-verification">
+                        <label for="username">Username
+                            <input type="text" name="username" id="username" placeholder="Username">
+                        </label>
+                        <label for="password">Password
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </label>
+                        <label for="DOB">Date of birth
+                            <input type="text" name="DOB" id="DOB" placeholder="yyyy-mm-dd">
+                        </label>
+                        <label for="courses">Courses
+                            <select name="courses" id="courses">
+                                <option value="--" selected>--</option>
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Art Major" >Art Major</option>
+                                <option value="E-commerce" >E-commerce</option>
+                                <option value="others" >others</option>
+                            </select>
+                        </label>
+                    </div>
+                    <p>Select campus</p>
+                    <div class="campus-radio-btn">
+                        <input type="radio" name="campus" id="laval" value="laval">
+                            <label for="laval">Laval</label>
+                        <input type="radio" name="campus" id="montreal" value="montreal">
+                            <label for="montreal">Montreal</label>   
+                        <input type="radio" name="campus" id="longueuil">
+                            <label for="longueuil">Longueuil</label>
+                    </div>
+                    <div class="contact info">
+                        <div class="icon"></div>
+                        <h3>Contact</h3>
+                    </div>
+                    <hr>
+                    <div class="contact">
+                        <div class="email">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="contact" id="email" placeholder="john@example.com">
+                        </div>
+
+                        <div class="phone">
+                            <label for="phone">Phone #</label><br>
+                            <input type="tel" name="contact" id="phone">
+                        </div>
+
+                        <div class="fav-color">
+                            <label for="color">Favorite color</label><br>
+                            <input type="color" name="contact" id="color">
+                        </div>
+                    </div>
+                    <div class="address info">
+                        <div class="icon"></div>
+                        <h3>Address</h3>
+                    </div>
+                    <hr>
+
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-format">
+                <p>&copy; Copyright by Jeffrey Grospe&trade;&nbsp;February 07 2022 &amp; &ssmile;</p>
+                <p>&phone; 514 911 9111</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
