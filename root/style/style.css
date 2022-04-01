@@ -345,9 +345,180 @@ footer>.footer-format {
     background-color: rgb(27, 183, 245);
     padding: 1rem 1rem;
     color: white;
+    margin-bottom: 5rem;
+}
+
+fieldset {
+    border-style: none;
+}
+
+.main-form{
+    position: relative;
+    width: 100%;
+    border-style: none none solid none;
+}
+
+form{
+    width: 80%;
+}
+/* Student's info section */
+.std-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-verification{
+    position: relative;
+}
+
+.user-username, .address-province, .user-dob{
+    width: 50%;
+    float: left;
+}
+    .user-username input{
+       width: 100%;
+    }
+
+.user-pass{
+  float: right;
+  width: 40%;
+}
+
+    .user-pass input, .user-dob input{
+        width: 100%;
+
+    }
+
+.user-courses{
+    float: right;
+    width: 40%;
+}
+     
+/* radio btn campus section */
+.campus-radio-btn{
+    clear: both;
+    margin-bottom: 20px;
+}
+    .campus-radio-btn p, .user-schedule p{
+       font-weight: bold;
+       margin-bottom: 5px;
+    }
+    .campus-radio-btn input, .user-schedule input{
+        margin-right: 5px;
+    }
+    .campus-radio-btn label{
+        margin-right: 10rem;
+    }
+    .user-schedule label{
+        margin-right: 5rem;
+    }
+
+/* Contact section  */
+.user-schedule, .user-contact{
+    margin-bottom: 30px;
+}
+.contact,.address, hr {
+    margin-bottom: 20px;
+}
+.user-contact {
+    display: flex;
+}
+    .user-contact div {
+        margin-right: 30px;
+    }
+    .email input{
+        width: 15rem;
+    }
+
+.user-phone input{
+    width: 14rem;
+}
+.fav-color {
+    width: 100%;
+}
+.fav-color input{
+    height: 20px;
+    width: 110%;
+    padding: 2px;
+}
+
+/* address section */
+.address-postal {
+ margin-bottom: 30px;
+  
+}
+
+.address-postal #postal{
+    width: 50%;
+}
+
+.address-province #province {
+    width: 95%;
+    
+    
+}
+
+input#street, input#city{
+    width: 100%;
+}
+
+/* comment section */
+
+textarea{
+    margin: 10px 0 20px 0;
+    width: 100%;
+    padding: 10px;
+}
+/* btn section */
+.btn button, .btn input {
+    width: 80px;
+    height: 40px;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 2px #999;
+}
+    .btn button:active, .btn input:active{
+        box-shadow: 0 5px #666;
+        transform: translateY(2px);
+    }
+    
+.btn button{
+    background-color: rgb(184, 16, 16);
+}
+    .btn button:hover {
+        background-color: rgb(190, 88, 88);
+    }
+.btn input {
+    background-color: rgb(27, 183, 245);
+}
+    .btn input:hover {
+        background-color: rgb(95, 201, 243);
+    }
+
+.btn{
+    margin-bottom: 4rem;
 }
 
 
+input#stdID, input#firstName, input#lastName{
+    width: 100%;
+}
+    input#lastName{
+        margin-bottom: 10px;
+    }
+input[type=text], input[type=password], select,
+input[type=email],input[type=tel]{
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+
+.form-footer{
+    margin-bottom: 15px;
+}
 
 
 /* Responsive layout */
