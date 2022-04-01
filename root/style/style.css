@@ -353,13 +353,11 @@ fieldset {
 }
 
 .main-form{
-    position: relative;
-    width: 100%;
     border-style: none none solid none;
 }
 
 form{
-    width: 80%;
+    width: 60%;
 }
 /* Student's info section */
 .std-form{
@@ -423,6 +421,7 @@ form{
 }
 .user-contact {
     display: flex;
+    justify-content: stretch;
 }
     .user-contact div {
         margin-right: 30px;
@@ -439,7 +438,7 @@ form{
 }
 .fav-color input{
     height: 20px;
-    width: 110%;
+    width: 100%;
     padding: 2px;
 }
 
