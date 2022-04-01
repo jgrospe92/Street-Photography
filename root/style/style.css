@@ -391,6 +391,10 @@ form{
 .user-courses{
     float: right;
     width: 40%;
+    margin-top: 20px;
+}
+select{
+    height: 20px;
 }
      
 /* radio btn campus section */
@@ -508,7 +512,7 @@ input#stdID, input#firstName, input#lastName{
     input#lastName{
         margin-bottom: 10px;
     }
-input[type=text], input[type=password], select,
+input[type=text], input[type=password],
 input[type=email],input[type=tel]{
     padding: 5px 0;
     margin: 5px 0;
