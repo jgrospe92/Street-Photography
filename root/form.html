@@ -32,7 +32,7 @@
                     <li><a href="lists.html">Lists</a></li>
                     <li><a href="tables.html">Tables</a></li>
                     <li id="currentPage"><a href="form.html">Form</a></li>
-                    <li><a  href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="https://unsplash.com" target="_blank">Unsplash</a></li>
                 </ul>
             </nav>
@@ -42,77 +42,90 @@
         </div>
         <main class="main-form">
             <div class="std-form">
-                <form action="" method="get">
+                <form action="http/example.com/" method="get">
                     <fieldset>
-                        <legend><div class="student info">
-                            <div class="icon"></div>
+                        <legend>
+                            <div class="student info">
+                                <div class="icon"></div>
                                 <h3> <i class="fas fa-info-circle fa-sm "></i> Student's Info</h3>
                             </div>
                         </legend>
                         <label for="stdID">Student ID <br></label>
-                            <input id="stdID" name="student" type="text" name="stdID" placeholder="Enter your student ID (only digit)"/><br>
+                        <input id="stdID" name="student" type="text"
+                            placeholder="Enter your student ID (only digit)" /><br>
                         <label for="firstName">Firstname <br>
                             <input type="text" name="student" id="firstName" placeholder="Firstname"></label><br>
                         <label for="lastName">Lastname <br>
                             <input type="text" name="student" id="lastName" placeholder="Lastname"></label><br>
                         <div class="user-verification">
-                                <div class="user-username">
-                                    <label for="username"><p>Username</p>
-                                        <input type="text" name="username" id="username" placeholder="Username">
-                                    </label>
-                                </div>
-                                <div class="user-pass">
-                                    <label for="password"><p>Password</p>
-                                        <input type="password" name="password" id="password" placeholder="Password">
-                                    </label>
-                                </div>
-                                <div class="user-dob">
-                                    <label for="DOB"><p>Date of birth</p>
-                                        <input type="text" name="DOB" id="DOB" placeholder="yyyy-mm-dd">
-                                    </label>
-                                </div>
-                               <div class="user-courses">
+                            <div class="user-username">
+                                <label for="username">
+                                    <p>Username</p>
+                                    <input type="text" name="username" id="username" placeholder="Username">
+                                </label>
+                            </div>
+                            <div class="user-pass">
+                                <label for="password">
+                                    <p>Password</p>
+                                    <input type="password" name="password" id="password" placeholder="Password">
+                                </label>
+                            </div>
+                            <div class="user-dob">
+                                <label for="DOB">
+                                    <p>Date of birth</p>
+                                    <input type="text" name="DOB" id="DOB" placeholder="yyyy-mm-dd">
+                                </label>
+                            </div>
+                            <div class="user-courses">
                                 <label for="courses">Courses
                                     <select name="courses" size="2" multiple="multiple" id="courses">
                                         <option value="--" selected>--</option>
                                         <option value="Computer Science">Computer Science</option>
-                                        <option value="Art Major" >Art Major</option>
-                                        <option value="E-commerce" >E-commerce</option>
-                                        <option value="Health Science" >Health Science</option>
-                                        <option value="Law" >Law</option>
-                                        <option value="others" >others</option>
+                                        <option value="Art Major">Art Major</option>
+                                        <option value="E-commerce">E-commerce</option>
+                                        <option value="Health Science">Health Science</option>
+                                        <option value="Law">Law</option>
+                                        <option value="others">others</option>
                                     </select>
                                 </label>
-                               </div>
+                            </div>
                         </div>
-                    <div class="campus-radio-btn">
-                        <p>Select campus</p>
-                        <input type="radio" name="campus" id="laval" value="laval">
+                        <div class="campus-radio-btn">
+                            <p>Select campus</p>
+                            <input type="radio" name="campus" id="laval" value="laval">
                             <label for="laval">Laval</label>
-                        <input type="radio" name="campus" id="montreal" value="montreal">
-                            <label for="montreal">Montreal</label>   
-                        <input type="radio" name="campus" id="longueuil">
+                            <input type="radio" name="campus" id="montreal" value="montreal">
+                            <label for="montreal">Montreal</label>
+                            <input type="radio" name="campus" id="longueuil">
                             <label for="longueuil">Longueuil</label>
-                    </div>
-                    <div class="user-schedule">
-                        <p>Select schedule preference:</p>
-                        <input type="checkbox" name="schedule" id="morning"><label for="morning">Morning classes</label>
-                        <input type="checkbox" name="schedule" id="evening"><label for="evening">Evening classes</label>
-                        <input type="checkbox" name="schedule" id="bb"><label for="bb">Back-to-back classes</label>
-                        <input type="checkbox" name="schedule" id="na"><label for="na">No preference</label>
+                        </div>
+                        <div class="user-schedule">
+                            <p>Select schedule preference:</p>
+                            <div>
+                                <input type="checkbox" name="schedule" id="morning"><label for="morning">Morning
+                                    classes</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="schedule" id="evening"><label for="evening">Evening
+                                    classes</label>
+                            </div>
+                            <div><input type="checkbox" name="schedule" id="bb"><label for="bb">Back-to-back classes</label></div>
+                            <div><input type="checkbox" name="schedule" id="na"><label for="na">No preference</label></div>
 
-                    </div>
+                        </div>
                     </fieldset>
 
-                    
-                    <fieldset>
-                        <legend><div class="contact info">
-                            <div class="icon"></div>
+
+                    <fieldset id="contact-form">
+                        <legend>
+                            <div class="contact info">
+                                <div class="icon"></div>
                                 <h3><i class="fas fa-phone-alt fa-xs"></i> Contact</h3>
                             </div>
                         </legend>
-                        <hr>
+                        <hr class="c-break">
                         <div class="user-contact">
+
                             <div class="email">
                                 <label for="email">Email</label><br>
                                 <input type="email" name="contact" id="email" placeholder="john@example.com">
@@ -127,9 +140,11 @@
                             </div>
                         </div>
                     </fieldset>
+
                     <fieldset class="user-address">
-                        <legend><div class="address info">
-                            <div class="icon"></div>
+                        <legend>
+                            <div class="address info">
+                                <div class="icon"></div>
                                 <h3><i class="fas fa-address-card fa-sm"></i> Address</h3>
                             </div>
                         </legend>
@@ -157,15 +172,16 @@
                         </div>
                         <div class="btn">
                             <button>Reset</button>
-                            <input type="submit" value="Submit">
+                            <button class="submit">submit</button>
+
                         </div>
                     </fieldset>
                     <hr>
-                <div class="form-footer">
-                    <p>&copy; Internet | student</p>
-                </div>
+                    <div class="form-footer">
+                        <p>&copy; Internet | student</p>
+                    </div>
                 </form>
-              
+
                 <hr>
             </div>
         </main>

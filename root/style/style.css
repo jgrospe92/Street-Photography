@@ -350,15 +350,15 @@ footer>.footer-format {
 
 fieldset {
     border-style: none;
+   
 }
 
 .main-form{
     border-style: none none solid none;
+    width: inherit;
+    
 }
 
-form{
-    width: 60%;
-}
 /* Student's info section */
 .std-form{
     display: flex;
@@ -423,9 +423,14 @@ select{
 .contact,.address, hr {
     margin-bottom: 20px;
 }
+
+.c-break{
+    width: 100%;
+}
 .user-contact {
     display: flex;
-    justify-content: stretch;
+    width: 100%;
+   
 }
     .user-contact div {
         margin-right: 30px;
@@ -458,8 +463,7 @@ select{
 
 .address-province #province {
     width: 95%;
-    
-    
+     
 }
 
 input#street, input#city{
@@ -483,7 +487,7 @@ textarea{
     cursor: pointer;
     box-shadow: 0 5px 2px #999;
 }
-    .btn button:active, .btn input:active{
+    .btn button:active, .btn .submit:active{
         box-shadow: 0 5px #666;
         transform: translateY(2px);
     }
@@ -494,10 +498,10 @@ textarea{
     .btn button:hover {
         background-color: rgb(190, 88, 88);
     }
-.btn input {
+.btn .submit {
     background-color: rgb(27, 183, 245);
 }
-    .btn input:hover {
+    .btn .submit:hover {
         background-color: rgb(95, 201, 243);
     }
 
@@ -523,8 +527,41 @@ input[type=email],input[type=tel]{
     margin-bottom: 15px;
 }
 
-
+.user-schedule div{
+      display: inline;
+   
+}
 /* Responsive layout */
+
+@media only screen and (max-width: 500px) {
+    .std-form{
+        display: table;
+        width: 100%;
+       
+    }
+    form {
+        width: inherit;
+    }
+
+   fieldset#contact-form .user-contact{
+     flex-direction: column;
+   }
+  .campus-radio-btn input, .campus-radio-btn label{
+      display: inline;
+      margin: 0;
+     padding-right: 1.5rem;
+  }
+  .user-schedule div{
+      display: block;
+   
+  }
+
+   .email{
+       display: block;
+   }
+  
+}
+
 @media only screen and (max-width: 775px) {
     .table-page{
         overflow-x: auto;
@@ -535,6 +572,7 @@ input[type=email],input[type=tel]{
     main.main-gallery {
         padding: 0 12.5rem 0 12.5rem;
     }
+    
 }
 
 
